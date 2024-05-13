@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with CSS</title>
+    
+    <style>
+          *{
+              margin: 0px;
+              padding: 0px;
+            }
+
+.container{
+    border: 2px solid black;
+    background-color: black;
+    height: 380px;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+.a{
+    color: white;
+}
+.inp{
+    width: 95%;
+    padding: 5px;
+    margin: 15px 10px;
+}
+
+#btn{
+    width: 98%;
+    background-color: yellow;
+    border: none;
+    padding: 8px;
+}
+
+label{
+    margin: 15px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family:sans-serif;
+    border-bottom: 2px solid yellow;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+    <div>
+           <label for="" class="a">Username :</label>
+           <input type="text" placeholder="enter the username" class="inp"> 
+    </div>
+
+    <div>
+           <label for="" class="a">Email :</label>
+           <input type="email" placeholder="enter your email" class="inp">
+    </div>
+
+    <div>
+           <label for="" class="a">password :</label> 
+           <input type="password" placeholder="enter mobile number" class="inp">
+    </div>  
+    
+    <div>
+           <input type="submit" class="inp" id="btn">
+    </div>
+
+    </div>
+</body>
+</html>
