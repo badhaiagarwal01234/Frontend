@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         body{
+            padding: 15px;
+         }
+        .container {
+            height: 100vh;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            height: 500px;
+            width: 380px;
+            /* border: 1px solid black; */
+            display: flex;
+            position: relative;
+        }
+
+        .image1 {
+            height: 550px;
+        }
+
+        .image2 {
+            height: 470px;
+            position: absolute;
+            right: 26px;
+            top: 23px;
+        }
+
+        .box2 {
+            height: 500px;
+            width: 350px;
+            /* border: 1px solid rgb(237, 234, 234); */
+            margin-left: 30px;
+        }
+
+        .form {
+            height: 70%;
+            border: 1px solid rgb(237, 234, 234);
+        }
+
+        .account {
+            height: 10%;
+            border: 1px solid rgb(237, 234, 234);
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .playstore {
+            height: 20%;
+            /* border: 1px dashed yellow; */
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        .logo {
+            height: 20%;
+            /* border: 1px dashed black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputs {
+            height: 50%;
+            /* border: 1px dashed palevioletred; */
+            margin: 15px;
+            margin-left: 30px;
+        }
+
+        .links {
+            height: 30%;
+            /* border: 1px dashed rebeccapurple; */
+            
+        }
+
+        .logo img {
+            width: 50%;
+            height: 70%;
+            display: inline-block;
+        }
+
+        .a {
+            width: 92%;
+            padding: 9px;
+            margin: 5px;
+            background-color: rgb(245, 244, 244);
+            border: 1px solid lightgray;
+            border-radius: 2px;
+            font-size: 12px;
+        }
+
+        .inputs p {
+            padding: 5px;
+            /* margin-left: 0px; */
+            font-family: sans-serif;
+            color: gray;
+            font-size: 12px;
+        }
+
+
+        .account p {
+            text-align: center;
+            color: rgb(19, 176, 224);
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+
+        }
+
+        .playstore p {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .img1 {
+            height: 40px;
+            margin-left: 45px;
+        }
+
+        .img2 {
+            height: 40px;
+            margin-left: 5px;
+        }
+
+        #log {
+            background-color: rgb(49, 205, 225);
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+        .fb{
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .fb a{
+            text-decoration: none;
+        }
+        .pass{
+            display: flex;
+            justify-content: center;
+            line-height: 4;
+            text-decoration: none;
+        }
+        .footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .footer li{
+            margin: 10px;
+            list-style-type: none;
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+        .footer2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="instaphone.png" alt="" class="image1">
+            <img src="inside.png" alt="" class="image2">
+        </div>
+        <div class="box2">
+            <div class="form">
+                <div class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsGUMX5_VbQJQ4OpHr0SWdUin5PjJyLmfQ7Zzd8JyGA&s"
+                        alt="image not found">
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="Phone number, username, or email" class="a">
+                    <input type="password" placeholder="Password" class="a">
+                    <input type="submit" value="Log in" class="a" id="log">
+                    <p><span><sup>_______________________</sup></span> OR <span><sup>______________________</sup></span>
+                    <p>
+                </div>
+                <div class="links">
+                <div class="fb">
+                    <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;&nbsp;
+                        <a href="">Log in with Facebook</a>            
+                </div>
+                    <a href="" style="text-decoration: none;"> 
+                        <p class="pass">Forgot password ?</p>
+                    </a>
+                </div>
+                
+
+            </div>
+
+            <div class="account">
+                <p>Create new account</p>
+            </div>
+            <div class="playstore">
+                <p>Get the app.</p>
+                <img src="playstor-logo.png" alt="" class="img1">
+                <img src="microsoft-logo.png" alt="" class="img2">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <li class="list">meta</li>
+        <li class="list">about</li>
+        <li class="list">blog</li>
+        <li class="list">jobs</li>
+        <li class="list">help</li>
+        <li class="list">API</li>
+        <li class="list">Privacy</li>
+        <li class="list">Terms</li>
+        <li class="list">Locations</li>
+        <li class="list">Instagram Lite</li>
+        <li class="list">Threads</li>
+        <li class="list"> Contact Uploading & Non-Users</li>
+        <li class="list">Meta Verified</li>
+    </div>
+    <div class="footer2">
+        <span>English&nbsp;&nbsp;&nbsp;© 2024 Instagram from Meta</span>
+    </div>
+</body>
+
+</html>
