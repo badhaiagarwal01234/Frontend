@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: black;
+            height: 100vh;
+            display: grid;
+            /* grid-template-columns: 800px 400px 300px; */
+            /* grid-template-columns: 4fr 4fr 1fr; */
+            /* grid-template-columns: repeat(2,6fr); */
+            grid-template-rows: 1fr 4fr 1fr;
+        }
+
+        .box{
+            background-color: black;
+            border: 2px solid white;
+        }
+        .box-item{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        .inner_box{
+        
+            background-color: pink;
+            border: 2px solid white;
+        }
+        .inner_box-1{
+            display: grid;
+            grid-template-rows: 2fr 4fr;
+            /* grid-gap: 20px; */
+        }
+        .upper{
+            background-color: red;
+            border: 2px solid white;
+        }
+        .inner_box-2{
+            display: grid;
+             grid-template-columns: 2fr 2fr 2fr; 
+             grid-gap: 20px;
+        }
+         .box2{
+              background-color: black;
+              /* border: 2px solid white; */
+              border-radius: 5px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box-item" >
+            <div class="inner_box inner_box-1">
+                <div class="upper"></div>
+                <div class="upper"></div>
+            </div>
+            <div class="inner_box inner_box-2">
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
