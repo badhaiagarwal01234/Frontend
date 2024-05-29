@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            /* background-color: black; */
+            display: flex;
+        }
+        .box1{
+            height: 100%;
+            width: 20%;
+            /* margin: 2px; */
+            color: white;
+            text-align: center;
+            line-height: 5;
+        }
+        
+        .box2{
+            height: 100%;
+            width: 25%;
+            /* background-color: rgb(224, 58, 114); */
+            /* margin:2px ; */
+            color: white;
+            text-align: center;
+            line-height: 5;
+        }
+        .box3{
+            height: 100%;
+            width: 35%;
+            background-color: rgba(255, 136, 0, 0.963);
+            /* margin: 2px; */
+            color: white;
+            text-align: center;
+            line-height: 35;
+            font-family: sans-serif;
+            /* font-weight: 1000; */
+        }
+        .box4{
+            height: 100%;
+            width: 20%;
+            color: white;
+            /* margin: 2px; */
+            text-align: center;
+            line-height: 5;
+        }
+        .inner1{
+            height: 25%;
+            /* margin: 2px; */
+            background-color: red;
+        }
+        .inner2{
+            height: 25%;
+            background-color: green;
+            /* margin: 2px; */
+        }
+        .inner3{
+            height: 25%;
+            background-color: lightgreen ;
+            /* margin: 2px; */
+        }
+        .inner4{
+            height: 25%;
+            background-color: purple;
+            /* margin: 2px; */
+    
+        }
+        .mid1{
+            height: 50%;
+            background-color: pink;
+            /* margin: 2px ; */
+        }
+        .mid2{
+            height: 25%;
+            /* margin:  2px; */
+            display: flex;
+            justify-content: left;
+        }
+        .center1{
+            height: 100%;
+            width: 25%;
+            background-color: green;
+            /* margin: 2px; */
+        }
+        .center2{ 
+            height: 100%;
+            width: 75%;
+            /* margin: 2px; */
+            background-color: rgb(23, 163, 219);
+
+        }
+        .mid3{
+            height: 25%;
+            background-color: purple;
+           /* margin:  2px ; */
+           
+        }
+        .right1{
+            height: 25%;
+            width: 100%;
+            background-color: gold;
+            /* margin: 2px; */
+        }
+        .right2{
+            height: 25%;
+            width: 100%;
+            background-color: rgb(43, 0, 255);
+            /* margin: 2px; */
+        }
+        .right3{
+            height: 25%;
+            width: 100%;
+            background-color: rgb(46, 145, 75);
+            /* margin: 2px; */
+        }
+        .right4{
+            height: 25%;
+            width: 100%;
+            background-color: rgb(255, 0, 34);
+            /* margin: 2px; */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="inner1">1</div>
+            <div class="inner2">5</div>
+            <div class="inner3">7</div>
+            <div class="inner4">11</div>
+        </div>
+        <div class="box2">
+            <div class="mid1">2</div>
+            <div class="mid2">
+                <div class="center1">8</div>
+                <div class="center2">9</div>
+            </div>
+            <div class="mid3"></div>
+        </div>
+        <div class="box3">CSS Grid Layout</div>
+        <div class="box4">
+            <div class="right1">3</div>
+            <div class="right2">6</div>
+            <div class="right3">10</div>
+            <div class="right4">12</div>
+        </div>
+    </div>
+</body>
+</html>
