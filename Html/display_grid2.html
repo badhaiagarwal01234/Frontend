@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            grid-gap: 10px;
+        }
+        .box{
+    
+           background-color: yellow;
+           /* border: 2px solid black; */
+           border-radius: 5px;
+        }
+
+        .box2{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        .box-item{
+        
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .box-item-2{
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+        }
+        .box3{
+            background-color: yellow;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .box-item-3{
+            display: grid;
+            grid-template-rows: 4fr 1fr;
+        }
+        .box4{
+            background-color: yellow;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .garima{
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+        }
+        .bad{
+            background-color: yellow;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .rak{
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+        }
+        .man{
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box2">
+            <div class="box-item box-item-2">
+                <div class="box3" style="background-color: red;"></div>
+                <div class="box3"></div>
+            </div>
+            <div class="box-item box-item-3">
+                <div class="box4 garima">
+                    <div class="bad"></div>
+                    <div class="bad rak">
+                        <div class="man"></div>
+                        <div class="man"></div>
+                    </div>
+                </div>
+                <div class="box4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
