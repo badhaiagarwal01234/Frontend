@@ -20,24 +20,23 @@
         .box{
     
            background-color: yellow;
-           /* border: 2px solid black; */
            border-radius: 5px;
         }
 
         .box2{
             display: grid;
             grid-template-columns: 1fr 4fr;
+            grid-gap: 10px;
         }
 
         .box-item{
-        
-            background-color: red;
-            border: 2px solid white;
+         
             border-radius: 5px;
         }
         .box-item-2{
             display: grid;
             grid-template-rows: 1fr 4fr;
+            grid-gap: 10px;
         }
         .box3{
             background-color: yellow;
@@ -47,28 +46,41 @@
         .box-item-3{
             display: grid;
             grid-template-rows: 4fr 1fr;
+            grid-gap: 10px;
         }
         .box4{
-            background-color: yellow;
+            /* background-color: yellow; */
             border: 2px solid white;
             border-radius: 5px;
         }
         .garima{
             display: grid;
             grid-template-columns: 4fr 2fr;
+            grid-gap: 10px;
         }
-        .bad{
+        .bad1{
             background-color: yellow;
-            border: 2px solid white;
             border-radius: 5px;
         }
         .rak{
             display: grid;
             grid-template-rows: 2fr 2fr;
+            grid-gap: 10px;
         }
-        .man{
+        .man1{
             background-color: red;
-            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .man2{
+            background-color: red;
+            border-radius: 5px;
+        }
+        .box5{
+            background-color: yellow;
+            border-radius: 5px;
+        }
+        .box32{
+            background-color: red;
             border-radius: 5px;
         }
     </style>
@@ -76,20 +88,20 @@
 <body>
     <div class="container">
         <div class="box"></div>
-        <div class="box box2">
+        <div class="box1 box2">
             <div class="box-item box-item-2">
-                <div class="box3" style="background-color: red;"></div>
+                <div class="box32"></div>
                 <div class="box3"></div>
             </div>
             <div class="box-item box-item-3">
                 <div class="box4 garima">
-                    <div class="bad"></div>
-                    <div class="bad rak">
-                        <div class="man"></div>
-                        <div class="man"></div>
+                    <div class="bad1"></div>
+                    <div class="bad2 rak">
+                        <div class="man1"></div>
+                        <div class="man2"></div>
                     </div>
                 </div>
-                <div class="box4"></div>
+                <div class="box5"></div>
             </div>
         </div>
     </div>
