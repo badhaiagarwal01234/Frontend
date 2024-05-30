@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: black;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 2fr 3fr 3fr;
+        }
+        .box{
+        
+            background-color: pink;
+            border: 2px solid white;
+        }
+        h1{
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .box2{
+            display: grid;
+            grid-template-columns: 1fr 4fr 2fr;
+        }
+        .inner-box{
+        
+            background-color: brown;
+            border: 2px solid white;
+        }
+        .box3{
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+        }
+        .inner-box1{
+             background-color: rgb(4, 159, 206);
+             border: 2px solid white;
+        }
+        .inner-item{
+    
+            background-color: pink;
+            border: 2px solid white;
+        }
+        .box4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+        }
+        .inner{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+           
+        }
+        .inner-item-1{
+            background-color: pink;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-color: black;"><h1>CSS GRID LAYOUT</h1></div>
+        <div class="box box2">
+            <div class="inner-box box3">
+                <div class="inner-box1"></div>
+                <div class="inner-box1"></div>
+            </div>
+            <div class="inner-box"></div>
+            <div class="inner-box box3">
+                <div class="inner-box1"></div>
+                <div class="inner-box1"></div>
+            </div>
+        </div>
+        <div class="box box4">
+            <div class="inner-item inner">
+                <div class="inner-item-1"></div>
+                <div class="inner-item-1"></div>
+            </div>
+            <div class="inner-item inner">
+                <div class="inner-item-1"></div>
+                <div class="inner-item-1"></div>
+            </div>
+            <div class="inner-item" style="background-color:brown ;"></div>
+            <div class="inner-item inner">
+                <div class="inner-item-1"></div>
+                <div class="inner-item-1"></div>
+            </div>
+            <div class="inner-item inner">
+                <div class="inner-item-1"></div>
+                <div class="inner-item-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
