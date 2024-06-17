@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+   <style>
+      @media only screen and (max-width: 762px) {
+        .filter2 {
+          filter: none;
+        }
+        .margin {
+          margin-top: 30px;
+        }
+        .mb-margin-top{
+          margin-top: 30px;
+        }
+      }
+      .bg-blue {
+        background-color: #37517e;
+      }
+      .blue {
+        color: #37517e;
+      }
+      .margin-top {
+        margin-top: 60px;
+      }
+      .font-size {
+        font-size: 50px;
+      }
+      .bg-grey {
+        color: lightgray;
+      }
+      .bg-lghtblue {
+        background-color: #47b2e4;
+      }
+      .border-radius {
+        border-radius: 30px;
+      }
+      .border-none {
+        border: none;
+      }
+      .filter {
+        filter: grayscale(100);
+      }
+      .filter:hover {
+        filter: none;
+        transform: scale(1.1);
+      }
+      .color2 {
+        color: #55b8e6;
+      }
+      .color4 {
+        color: #55b8e6;
+      }
+      .color2:hover {
+        background-color: #55b8e6 !important;
+        color: white;
+      }
+      .border-radius {
+        border-radius: 10px;
+      }
+      .bg-whit {
+        background-color: #f3f5fa;
+      }
+      .color3 {
+        color: #37517e;
+      }
+      .margin-top2 {
+        margin-top: 100px;
+      }
+      .font-size2 {
+        font-size: 20px;
+      }
+      .font-weight {
+        font-family: revert;
+      }
+      .family {
+        font-weight: 700;
+        font-size: 32px;
+        color: #37517e;
+        font-family: "Poppins", sans-serif;
+      }
+      .display-flex {
+        display: flex;
+      }
+      .part {
+        box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+
+        transition: all ease-in-out 0.4s;
+        background: #fff;
+      }
+      .bt:hover {
+        transform: translateY(-20px) !important;
+      }
+      .margin1 {
+        margin-left: 400px;
+      }
+      .padding {
+        padding: 8px 20px 8px 20px;
+      }
+      .margin2 {
+        margin-left: 15px;
+      }
+      .margin3 {
+        margin-left: 15px;
+      }
+      .margin4 {
+        margin-left: 15px;
+      }
+      .border-radius2 {
+        border-radius: 50px;
+      }
+      .icon:hover {
+        background-color: #55b8e6 !important;
+      }
+      
+      .padding-left {
+        padding-left: 25px;
+      }
+      .font-size2 {
+        font-size: 30px;
+      }
+      .font-size3 {
+        font-size: 60px;
+      }
+      .width {
+        width: 30px;
+      }
+      .height {
+        height: 30px;
+      }
+      .font-size4 {
+        font-size: 20px;
+      }
+      .padding-left {
+        padding-left: 10px;
+      }
+      .family2{
+       font-weight: 35px;
+       font-size: 500px;
+       color: #37517e;
+        
+      }
+      .family3{
+        color: #37517e;
+        font-size: 500px;
+      }
+      .color5:hover{
+        color: #55b8e6 !important;
+      }
+      .width5{
+        width: 50px;
+      }
+      .height5{
+        height: 50px;
+      }
+      .bg-blue1{
+        background-color: #37517e;
+      }
+      .border-radius3{
+        border-radius: 50px;
+      }
+      .btn2{
+        font-weight: 600;
+        font-size: 14px;
+        border: 2px solid #47b2e4;
+    
+      }
+      .padding-top{
+           padding-top: 100px;
+      }
+      .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.trans{
+  
+  background-color: #37517e;
+  opacity: 0.9;
+}
+    </style>
+  </head>
+  <body>
+    
+<nav class="navbar navbar-dark navbar-expand-sm  trans fixed-top">
+  <div class="container">
+  <a href="/" class="navbar-brand">
+  <i class="fas fa-blog"></i> &nbsp;
+  <H1>ARSHA</H1>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+  <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <a href="" class="nav-link text-white  color5">
+              Home
+          </a>
+      </li>
+      <li class="nav-item">
+          <a href="" class="nav-link text-white color5">
+              About
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white color5">
+            Services
+        </a>
+    </li>
+      <li class="nav-item">
+          <a href="" class="nav-link text-white color5">
+              Portfolio
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white color5 ">
+            Team
+        </a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link text-white color5">
+          Drop Down
+      </a>
+  </li>
+      <li class="nav-item">
+          <a href="" class="nav-link text-white color5">
+              Contact
+          </a>
+      </li>
+  </ul>
+   <button class="border-radius3 ml-5 padding btn2 icon trans text-white">Get Started</button>
+  </div>
+
+
+
+</div>
+
+</nav>
+
+
+
+    <div class="bg-blue">
+      <div class="container padding-top">
+        <div class="row">
+          <div class="col-md-6 margin-top">
+            <h1 class="text-white mt-5 font-size">
+              Better Solutions For Your Business
+            </h1>
+            <h4 class="bg-grey">
+              We are team of talented designers making websites with Bootstrap
+            </h4>
+            <button
+              class="bg-lghtblue py-2 px-3 border-radius text-white border-none"
+            >
+              Get Started
+            </button>
+            <button class="m-lg-5 border-none bg-blue text-white">
+              <img
+                src="https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-circle-neu-music-neu-royyan-wijaya.png"
+              />
+              Watch Video
+            </button>
+          </div>
+          <div class="col-md-6">
+            <img src="26img.png" alt="" class="img img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="">
+        <div class="row mt-5">
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="1sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="2sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="3sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="4sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="5sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="col-6 filter">
+              <img src="6sm.png" alt="" class="img img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <h1 class="blue font-weight">ABOUT US</h1>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div>
+            <img
+              src="https://img.icons8.com/material-outlined/24/22C3E6/double-tick.png"
+            /><span class="m-lg-2"
+              >Ullamco laboris nisi ut aliquip ex ea commodo consequat</span
+            >
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/material-outlined/24/22C3E6/double-tick.png"
+            /><span class="m-lg-2"
+              >Duis aute irure dolor in reprehenderit in voluptate velit</span
+            >
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/material-outlined/24/22C3E6/double-tick.png"
+            /><span class="m-lg-2"
+              >Ullamco laboris nisi ut aliquip ex ea commodo consequat</span
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <button
+            class="border border-info px-5 py-2 color2 border-radius bg-white font-size2"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-whit mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="color3 margin-top2">
+              Eum ipsam laborum deleniti
+              <strong class="color3"
+                >velit pariatur architecto aut nihil</strong
+              >
+            </h3>
+
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </div>
+
+            <button class="accordion mt-3  bg-white"><h5 class="color4">01   Non consectetur a erat nam at lectus urna duis? </h5></button>
+<div class="panel">
+  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+</div>
+
+<button class="accordion  mt-3  bg-white"><h5 class="color5"><span class="color4">02</span > Feugiat scelerisque varius morbi enim nunc?</h5></button>
+<div class="panel">
+  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+</div>
+
+<button class="accordion mb-5 mt-3  bg-white"> <h5 class="color5"><span class="color4">03</span> Dolor sit amet consectetur adipiscing elit?</h5></button>
+<div class="panel">
+  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+</div>
+
+            </div>
+            <div class="col-md-6">
+              <img src="7sm.png" alt="" class="img img-fluid pt-5" />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="8sm.png" alt="" class="img img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <strong class="color3 family"
+            >Voluptatem dignissimos provident quasi corporis voluptates</strong
+          >
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="bg-whit">
+      <div class="container ">
+        <div>
+          <h2 class="text-center family margin-top pt-5">SERVICES</h2>
+          <p class="text-center">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="row mt-5 pb-5">
+          <div class="col-md-3">
+            <div class="col-md-12 card part bt">
+              <img src="https://img.icons8.com/windows/32/22C3E6/beach-ball.png"/
+              class="w-25 h-25 p-lg-3">
+              <h4 class="p-lg-3 color3">Lorem Ipsum</h4>
+              <p class="padding-left pb-4">
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 card pb-4 part bt margin">
+              <img
+              src="https://img.icons8.com/fluency-systems-regular/48/22C3E6/documents.png"/
+              class="w-25 h-25 p-lg-3">
+              <h4 class="p-lg-3 color3">Sed ut perspici</h4>
+              <p class="padding-left">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 card pb-4 part bt margin">
+              <img
+              src="https://img.icons8.com/external-glyph-silhouettes-icons-papa-vector/78/22C3E6/external-Speedometer-photo-and-video-glyph-silhouettes-icons-papa-vector.png"/
+              class="w-25 h-25 p-lg-3">
+              <h4 class="p-lg-3 color3">Magni Dolores</h4>
+              <p class="padding-left">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 card part bt margin">
+              <img
+              src="https://img.icons8.com/ios-filled/50/22C3E6/stack-of-money.png"/
+              class=" w-25 h-25 p-lg-3">
+              <h4 class="p-lg-3 color3">Nemo Enim</h4>
+              <p class="padding-left pb-4">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h1 class="text-center family">PORTFOLIO</h1>
+      <p class="text-center">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+    <div class="bg-whit mt-5">
+      <div class="container pt-5">
+        <h1 class="family text-center">TEAM</h1>
+        <p class="text-center">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-6">
+            <div class="col-md-12 card">cgyfyi</div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="col-md-12 card">fegvhyu</div>
+          </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="mt-5 container">
+      <h1 class="family text-center">PRICING</h1>
+      <p class="text-center">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+      <div class="row">
+        <div class="col-md-4 mb-margin-top ">
+          <div class="col-md-12 card padding-left pt-3 color3">
+            <h4>Free Plan</h4>
+            <h4 class="font-size3">
+              <sup class="font-size2">$</sup>
+              <span>0</span>
+            </h4>
+            <span class="color4 font-size4">per month</span>
+            <div class="mt-5">
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Quam adipiscing vitae proin</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nec feugiat nisl pretium</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nulla at volutpat diam uteera</span>
+            </div>
+            <div>
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/EBEBEB/multiply.png"
+              />
+              <s class="text-secondary">Pharetra massa massa ultricies</s>
+            </div>
+            <div>
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/EBEBEB/multiply.png"
+              />
+              <s class="text-secondary"> Massa ultricies mi quis hendrerit</s>
+            </div>
+            <div class="pb-5">
+              <button
+                class="padding border-radius2 mt-5 color4 border-info color2 bg-white border font-size4"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-margin-top">
+          <div class="col-md-12 card padding-left pt-3 ">
+            <h4>Business Plan</h4>
+            <h4 class="font-size3">
+              <sup class="font-size2">$</sup>
+              <span>0</span>
+            </h4>
+            <span class="color4 font-size4">per month</span>
+            <div class="mt-5">
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Quam adipiscing vitae proin</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nec feugiat nisl pretium</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nulla at volutpat diam uteera</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Pharetra massa massa ultricies</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span> Massa ultricies mi quis hendrerit</span>
+            </div>
+            <div class="pb-5">
+              <button
+                class="mt-5 padding border-none border-radius2 bg-lghtblue text-white font-size4"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-5 mb-margin-top">
+          <div class="col-md-12 card padding-left pt-3 color3">
+            <h4>Developer Plan</h4>
+            <h4 class="font-size3">
+              <sup class="font-size2">$</sup>
+              <span>49</span>
+            </h4>
+            <span class="color4 font-size4">per month</span>
+            <div class="mt-5">
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Quam adipiscing vitae proin</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nec feugiat nisl pretium</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Nulla at volutpat diam uteera</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span>Pharetra massa massa ultricies</span>
+            </div>
+            <div>
+              <img
+              src="https://img.icons8.com/material-outlined/24/40C057/checkmark--v1.png"/
+              class="width height">
+              <span> Massa ultricies mi quis hendrerit</span>
+              <div class="pb-5">
+                <button
+                  class="padding border-radius2 mt-5 color4 border-info color2 bg-white border font-size4"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-whit">
+      <div class="container">
+        <h1 class="family text-center pt-5">FREQUENTLY ASKED QUESTIONS</h1>
+        <p class="text-center">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+        
+        <button class="accordion mt-3  bg-white"><h5 class="color4"><img src="https://img.icons8.com/ios-filled/50/22C3E6/ask-question.png"/>  Feugiat scelerisque varius morbi enim nunc?</h5></button>
+        <div class="panel">
+          <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+        </div>
+
+        <button class="accordion mt-3  bg-white"><h5 class="color4"><img src="https://img.icons8.com/ios-filled/50/22C3E6/ask-question.png"/>   Dolor sit amet consectetur adipiscing elit?</h5></button>
+<div class="panel">
+  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+</div>
+<button class="accordion mt-3  bg-white"><h5 class="color4"><img src="https://img.icons8.com/ios-filled/50/22C3E6/ask-question.png"/>   Tempus quam pellentesque nec nam aliquam sem et tortor consequat? </h5></button>
+<div class="panel">
+  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+</div>
+
+<button class="accordion mt-3  bg-white"><h5 class="color4"><img src="https://img.icons8.com/ios-filled/50/22C3E6/ask-question.png"/>   Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? </h5></button>
+<div class="panel">
+  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+</div>
+
+<button class="accordion mt-3  bg-white mb-5"><h5 class="color4"><img src="https://img.icons8.com/ios-filled/50/22C3E6/ask-question.png"/>  Non consectetur a erat nam at lectus urna duis? </h5></button>
+<div class="panel">
+  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+</div>
+
+
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h1 class="family text-center">CONTACT</h1>
+      <p class="text-center">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="bg-whit">
+       <div class="container ">
+        <div class="text-center mt-5 pt-5 family2">
+          <h3>Join Our Newsletter</h3>
+        </div>
+        <div class="text-center">
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+
+          </p>
+        </div>
+
+       </div>
+         
+    </div>
+
+
+       <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <h1 class="family">ARSHA</h1>
+            <p>A108 Adam Street <br>
+              New York, NY 535022 <br>
+              United States <br> <br>
+             <strong>phone:</strong>
+             : +1 5589 55488 55 <br>
+             <strong>Email:</strong>
+             info@example.com
+            </p>
+          </div>
+          <div class="col-md-3 ">
+            <div class="family3 mt">
+              <h5>Useful Links</h5>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Home</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5 ">About us</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Services</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Terms of service</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Privacy policy</span>
+            </div>
+    
+          </div>
+          <div class="col-md-3">
+         
+            <div class="family3 mt">
+              <h5>Our Services</h5>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Web Design</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5 ">Web Development </span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Product Management</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+              <span class=" color5">Marketing</span>
+            </div>
+            <div class=" mt-3">
+              <img src="https://img.icons8.com/material-outlined/24/22C3E6/forward.png"/ class="img img-fluid">
+                <span class=" color5">Graphic Design</span>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="family3">
+  <h5>Our Social Networks</h5>
+            </div>
+            <div>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            </div>
+          <div class="">
+            <img src="https://img.icons8.com/sf-black-filled/64/22C3E6/facebook-messenger.png"/>
+            <img src="https://img.icons8.com/ios-filled/50/22C3E6/facebook-circled--v1.png"/>
+            <img src="https://img.icons8.com/sf-black/64/22C3E6/whatsapp.png"/>
+            <img src="https://img.icons8.com/ios-filled/50/22C3E6/linkedin-circled--v1.png"/>
+          </div>
+          </div>
+
+        </div>
+
+       </div>
+
+
+ <div class=" bg-blue1">
+
+ </div>
+ <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
